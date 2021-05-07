@@ -1,0 +1,9 @@
+
+version: "3"
+services:
+  go-docker-image:
+    build: ../../awesomeProject
+    ports:
+      - '99:99'
+    volumes:
+      - ./:/app
